@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max-screen</title>
+    <style>
+        body{
+            font-family: sans-serif;
+        }
+        .container{
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+        .card{
+            width: 32%;
+            box-sizing: border-box;
+            border-radius: 4px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+        }
+        .card-title,.card-body{
+            padding: 10px;
+        }
+        .card-title h1{
+            margin: 0;
+            padding: 0;
+            font-weight: 500;
+        }
+        .card-body p{
+            margin: 0;
+            padding: 0;
+            line-height: 1.4;
+        }
+        .bt{
+            border-top: 2px solid green;
+        }
+        
+        @media (max-width:860px){
+            .container{
+                flex-wrap: wrap;
+            }
+            .card{
+                width: 49%;
+                margin-top: 10px;
+                background: skyblue;
+            }
+            .box{
+                width: 100%;
+            }
+        }
+
+        @media(max-width:640px){
+            .card{
+                width: 100%;
+            }
+            .container{
+                width: 96%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="card bt">
+            <div class="card-title">
+                <h1>Practice 1</h1>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, quam?</p>
+            </div>
+        </div>
+        <div class="card bt">
+            <div class="card-title">
+                <h1>Practice 2</h1>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, quam?</p>
+            </div>
+        </div>
+        <div class="card bt box">
+            <div class="card-title">
+                <h1>Practice 3</h1>
+            </div>
+            <div class="card-body">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, quam?</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
